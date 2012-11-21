@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Critical Path</title>
+ <link href="http://akollegger.github.com/critical-path/atom.xml" rel="self"/>
+ <link href="http://akollegger.github.com/critical-path"/>
+ <updated>2012-11-21T12:51:56-05:00</updated>
+ <id>http://akollegger.github.com/critical-path</id>
+ <author>
+   <name>Andreas Kollegger</name>
+   <email>andreas@neotechnology.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>What is Neo4j?</title>
+   <link href="http://akollegger.github.com/critical-path/unaware/2012/11/21/what-is-neo4j"/>
+   <updated>2012-11-21T00:00:00-05:00</updated>
+   <id>http://akollegger.github.com/critical-path/unaware/2012/11/21/what-is-neo4j</id>
+   <content type="html">&lt;h2 id='premise'&gt;Premise&lt;/h2&gt;
+
+&lt;p&gt;As (pretend) &lt;a href='https://twitter.com/JonahNRO'&gt;Jonah Goldberg&lt;/a&gt;, I&amp;#8217;ve noticed Neo4j because my friend Andreas Kollegger has tweeted about it. Andreas is a smart guy, so I&amp;#8217;m curious about what he&amp;#8217;s up to. While I&amp;#8217;m no nerd, I do make my living on the internets and am well rounded enough to write critical political analysis steeped in pop culture references.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Goal&lt;/strong&gt;: understand what Neo4j is&lt;/p&gt;
+
+&lt;h2 id='transcript'&gt;Transcript&lt;/h2&gt;
+&lt;table class='table table-striped'&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;JJSG&lt;/th&gt;&lt;th&gt;Result&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href='http://lmgtfy.com/?q=neo4j'&gt;google &quot;neo4j&quot;&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Neo4j listing&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content>
+ </entry>
+ 
+ 
+</feed>
