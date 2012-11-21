@@ -9,10 +9,10 @@ tags: [reporter, gp]
 
 ## Premise
 
-As (pretend) [Jonah Goldberg](https://twitter.com/JonahNRO), I've noticed Neo4j because my friend Andreas 
-Kollegger has tweeted about it. Andreas is a smart guy, so I'm curious about what he's up to. While I'm no 
-nerd, I do make my living on the internets and am well rounded enough to write critical political analysis
-steeped in pop culture references. 
+As (pretend) [Jonah Goldberg](https://twitter.com/JonahNRO), I've noticed [Neo4j](http://neo4j.org) because 
+my friend Andreas Kollegger has tweeted about it. Andreas is a smart guy, so I'm curious about what he's up to. 
+While I'm no nerd, I do make my living on the internets and am well rounded enough to write critical political 
+analysis steeped in pop culture references. 
 
 **Goal**: understand what Neo4j is
 
