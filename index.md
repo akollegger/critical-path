@@ -5,8 +5,6 @@ tagline: Trial runs of Neo4j
 ---
 {% include JB/setup %}
 
-
-
 ## Trials
 
 <ul class="posts">

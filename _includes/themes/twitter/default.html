@@ -15,6 +15,8 @@
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all">
+
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -32,29 +34,51 @@
       <div class="navbar-inner">
         <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-          </ul>
         </div>
       </div>
     </div>
 
     <div class="container">
+ 
+      <div id="critical-path">
+        <a href="/unaware"><span class="node">(unaware)</span></a>
+        <a href="/inform"><span class="relationship to">-[inform]-&gt;</span></a><a href="/aware"><span class="node">(aware)</span></a>
+        <a href="/try"><span class="relationship to">-[try]-&gt;</span></a><a href="/interested"><span class="node">(interested)</span></a>
+        <a href="/use"><span class="relationship to">-[use]-&gt;</span></a><a href="/like"><span class="node">(like)</span></a>
+        <a href="/commit"><span class="relationship to">-[commit]-&gt;</span></a><a href="/love"><span class="node">(love)</span></a>
+      </div>
 
       <div class="content">
         {{ content }}
       </div>
 
       <footer>
-        <p>&copy; {{ site.author.name }} 2012 
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                {% assign pages_list = site.pages %}
+                {% assign group = 'navigation' %}
+                {% include JB/pages_list %}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p id="credits">&copy; {{ site.author.name }} 2012 
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
 
     </div> <!-- /container -->
+
+    <script type="text/javascript" src="/assets/js/d3.v2.min.js"> </script> 
+    
+    <script type="text/javascript" src="/assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="/assets/js/wrapnodes.js"> </script>
 
     {% include JB/analytics %}
   </body>
