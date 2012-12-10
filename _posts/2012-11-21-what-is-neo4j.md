@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "What is Neo4j?"
+persona: "Jonah Goldberg"
 description: "As a reporter, I have heard of Neo4j but am not sure what it is."
 category: unaware
 tags: [reporter, gp]
 ---
 {% include JB/setup %}
 
-## Premise
+## Scenario
 
 As (pretend) [Jonah Goldberg](https://twitter.com/JonahNRO), I've noticed [Neo4j](http://neo4j.org) because 
 my friend Andreas Kollegger has tweeted about it. Andreas is a smart guy, so I'm curious about what he's up to. 

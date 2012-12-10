@@ -41,15 +41,15 @@
     <div class="container">
  
       <div id="critical-path">
-        <a href="/unaware"><span class="node">(unaware)</span></a>
-        <a href="/inform"><span class="relationship to">-[inform]-&gt;</span></a><a href="/aware"><span class="node">(aware)</span></a>
-        <a href="/try"><span class="relationship to">-[try]-&gt;</span></a><a href="/interested"><span class="node">(interested)</span></a>
-        <a href="/use"><span class="relationship to">-[use]-&gt;</span></a><a href="/like"><span class="node">(like)</span></a>
-        <a href="/commit"><span class="relationship to">-[commit]-&gt;</span></a><a href="/love"><span class="node">(love)</span></a>
+        <a href="/unaware/"><span class="node">(unaware)</span></a>
+        <a href="/inform/"><span class="relationship to">-[inform]-&gt;</span></a><a href="/aware/"><span class="node">(aware)</span></a>
+        <a href="/appeal/"><span class="relationship to">-[appeal]-&gt;</span></a><a href="/interested/"><span class="node">(interested)</span></a>
+        <a href="/reward/"><span class="relationship to">-[reward]-&gt;</span></a><a href="/like/"><span class="node">(like)</span></a>
+        <a href="/risk/"><span class="relationship to">-[risk]-&gt;</span></a><a href="/love/"><span class="node">(love)</span></a>
       </div>
 
       <div class="content">
-        {{ content }}
+        {{ content | emojify }}
       </div>
 
       <footer>

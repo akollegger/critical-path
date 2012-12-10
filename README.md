@@ -4,6 +4,14 @@ This is an exercise in continuous usability testing (CUT'ing?) of Neo4j, through
 impersonated) people with explicit goals, assumptions and constraints. The critical path leads from being completely
 unaware of Neo4j to falling in love with Neo4j (committed to Neo4j as a non-optional dependency).
 
-The path attempts to understand how a user relates to Neo4j as they traverse the traditional marketing/sales funnel.
+The path attempts to capture how a user relates to Neo4j as they traverse the traditional marketing/sales funnel.
 
 For details and progress, see the [Critical Path website](http://akollegger.github.com/critical-path).
+
+## How to
+
+Serve locally: `jekyll --server`
+
+New page: `rake page name="page name"`
+
+New post: `rake post title="Title of post"`
