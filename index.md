@@ -23,13 +23,13 @@ Grading considers a range of standards:
 
 <table class="table">
 	<thead>
-		<tr><th>Date</th><th>Title</th><th>Persona</th><th>From</th><th>To</th><th>P</th><th>U</th><th>R</th><th>F</th></tr>
+		<tr><th>Date</th><th>Title</th><th>Persona</th><th>From</th><th>To</th><th>F</th><th>R</th><th>U</th><th>P</th></tr>
 	</thead>
 	<tbody>	 
 {% for post in site.posts %}
 		<tr><td>{{ post.date | date_to_string }} </td><td> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> </td><td>{{ post.persona }}</td>
-			<td> unaware </td><td> aware</td>
-			<td>3</td><td>3</td><td>3</td><td>3</td>
+			<td>{{ post.from }}</td><td> {{ post.to }}</td>
+			<td>{{ post.functional }}</td><td>{{ post.reliable }}</td><td>{{ post.usable }}</td><td>{{ post.pleasurable }}</td>
 		</tr>
 {% endfor %} 
 	</tbody>

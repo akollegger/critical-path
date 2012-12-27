@@ -3,7 +3,10 @@ layout: post
 title: "What is Neo4j?"
 persona: "Jonah Goldberg"
 description: "As a reporter, I have heard of Neo4j but am not sure what it is."
-category: unaware
+category: faux
+from: unaware
+to: aware
+duration: 1 hour
 tags: [reporter, gp]
 ---
 {% include JB/setup %}
