@@ -17,34 +17,42 @@ tags: [sysadmin]
 - go to [Neo4j Debian](http://debian.neo4j.org)
 - follow the instructions...
 
+```bash
     $ wget -O - http://debian.neo4j.org/neotechnology.gpg.key| apt-key add - 
     $ echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
+```
 
 - fail, needs to be run as root, of course
 
+```bash
     $ echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
-
+```
 - continuing... Update the apt-get listings
 
+```bash
     $ sudo aptitude update -y # Find out about the files in our repository
-
+```
 - Verify that Neo4j is now available
 
+```bash
     $ apt-cache search neo4j                 
     neo4j-coordinator - Coordinator service for Neo4j clusters.
     neo4j-enterprise - graph database server
     neo4j-advanced - graph database server
     neo4j - graph database server
+```
 
 - Inconsistent descriptions. How about...
 
-    neo4j-coordinator - coordinator service for Neo4j clusters
-    neo4j-enterprise - graph database with clustering ability
-    neo4j-advanced - graph database with monitoring
-    neo4j - open source graph database
- 
+
+> neo4j-coordinator - coordinator service for Neo4j clusters
+> neo4j-enterprise - graph database with clustering ability
+> neo4j-advanced - graph database with monitoring
+> neo4j - open source graph database
+
  - Installing `neo4j` package
 
+```bash
     $ sudo aptitude install neo4j -y
     The following NEW packages will be installed:
       daemon{a} default-jre{a} default-jre-headless{a} neo4j 
@@ -60,12 +68,15 @@ tags: [sysadmin]
 
     Do you want to ignore this warning and proceed anyway?
     To continue, enter "Yes"; to abort, enter "No": 
+```
 
 - Hm. Well, I already have java installed. Let's be agreeable to see what happens...
 
+```bash
     ...
     process [2589]... waiting for server to be ready........ OK.
     Go to http://localhost:7474/webadmin/ for administration interface.
+```
 
 - Sadly, I'm on a headless machine and `curl`ing that address isn't helpful. 
 - Consider a hint non-js hint about using `neo4j-shell`
@@ -77,13 +88,16 @@ tags: [sysadmin]
 
 - OK, commands to start/stop/whatever... oh and "info" is an option, let's try that...
 
+```bash
     $ neo4j info
     zsh: command not found: neo4j
+```
 
 - Right, because no command called `neo4j` is actually available. Neo4j is just a system service. This makes the man page really confusing. 
 
 - Insider knowledge let's me know I should give `neo4j-shell` a try.
 
+```bash
     $ neo4j-shell
     Welcome to the Neo4j Shell! Enter 'help' for a list of commands
     NOTE: Remote Neo4j graph database service 'shell' at port 1337
@@ -113,6 +127,7 @@ tags: [sysadmin]
          each attribute.
       
     neo4j-sh (0)$ 
+```
 
 - Help was not helpful. `ls` seemed tempting, but was useless. `dbinfo` was promising but un-enlightening. What am I supposed to do with this? `exit` immediately
 
@@ -122,6 +137,7 @@ tags: [sysadmin]
   - Accept changes to `/etc/neo4j/neo4j-wrapper.conf`
   - Fail...
 
+```bash
     neo4j-service already installed.
     WARNING: Max 1024 open files allowed, minimum of 40 000 recommended. See the Neo4j manual.
     WARNING! You are using an unsupported Java runtime. Please use JDK 6.
@@ -146,6 +162,7 @@ tags: [sysadmin]
      subprocess installed post-installation script returned error exit status 2
     Errors were encountered while processing:
      neo4j-enterprise
+```
 
 - Uninstall it all. Shutdown. 
 
