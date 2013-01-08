@@ -19,29 +19,29 @@ tags: [sysadmin]
 
 
 ```bash
-    $ wget -O - http://debian.neo4j.org/neotechnology.gpg.key| apt-key add - 
-    $ echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
+$ wget -O - http://debian.neo4j.org/neotechnology.gpg.key| apt-key add - 
+$ echo 'deb http://debian.neo4j.org/repo stable/' > /etc/apt/sources.list.d/neo4j.list
 ```
 
 
 - fail, needs to be run as root, of course
 
 ```bash
-    $ echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
+$ echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
 ```
 - continuing... Update the apt-get listings
 
 ```bash
-    $ sudo aptitude update -y # Find out about the files in our repository
+$ sudo aptitude update -y # Find out about the files in our repository
 ```
 - Verify that Neo4j is now available
 
 ```bash
-    $ apt-cache search neo4j                 
-    neo4j-coordinator - Coordinator service for Neo4j clusters.
-    neo4j-enterprise - graph database server
-    neo4j-advanced - graph database server
-    neo4j - graph database server
+$ apt-cache search neo4j                 
+neo4j-coordinator - Coordinator service for Neo4j clusters.
+neo4j-enterprise - graph database server
+neo4j-advanced - graph database server
+neo4j - graph database server
 ```
 
 - Inconsistent descriptions. How about...
@@ -55,21 +55,21 @@ tags: [sysadmin]
  - Installing `neo4j` package
 
 ```bash
-    $ sudo aptitude install neo4j -y
-    The following NEW packages will be installed:
-      daemon{a} default-jre{a} default-jre-headless{a} neo4j 
-    0 packages upgraded, 4 newly installed, 0 to remove and 6 not upgraded.
-    Need to get 39.4 MB of archives. After unpacking 60.9 MB will be used.
-    WARNING: untrusted versions of the following packages will be installed!
+$ sudo aptitude install neo4j -y
+The following NEW packages will be installed:
+  daemon{a} default-jre{a} default-jre-headless{a} neo4j 
+0 packages upgraded, 4 newly installed, 0 to remove and 6 not upgraded.
+Need to get 39.4 MB of archives. After unpacking 60.9 MB will be used.
+WARNING: untrusted versions of the following packages will be installed!
 
-    Untrusted packages could compromise your system's security.
-    You should only proceed with the installation if you are certain that
-    this is what you want to do.
+Untrusted packages could compromise your system's security.
+You should only proceed with the installation if you are certain that
+this is what you want to do.
 
-      neo4j 
+  neo4j 
 
-    Do you want to ignore this warning and proceed anyway?
-    To continue, enter "Yes"; to abort, enter "No": 
+Do you want to ignore this warning and proceed anyway?
+To continue, enter "Yes"; to abort, enter "No": 
 ```
 
 - Hm. Well, I already have java installed. Let's be agreeable to see what happens...
