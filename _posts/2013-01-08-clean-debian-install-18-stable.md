@@ -168,3 +168,16 @@ Errors were encountered while processing:
 
 - Uninstall it all. Shutdown. 
 
+## Round #2
+
+- start a clean Ubuntu 12.04 LTS machine
+
+- correct `sudo`-ified commands...
+
+```bash
+wget -O - http://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
+sudo aptitude update -y
+sudo aptitude install neo4j -y
+```
+
