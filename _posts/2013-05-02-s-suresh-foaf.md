@@ -7,7 +7,7 @@ category: actual
 from: unaware
 to: interested
 duration: 1 hour
-tags: [dev]
+tags: [dev, 1.9.RC2]
 ---
 {% include JB/setup %}
 
