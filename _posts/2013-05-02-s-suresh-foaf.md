@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "S Suresh FoaF"
-persona: "Teju Prasad"
+persona: "S Suresh"
 description: "As a developer, I'd like to try using Neo4j for a Friend-of-a-Friend query."
 category: actual
 from: unaware
