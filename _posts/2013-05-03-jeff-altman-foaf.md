@@ -70,3 +70,11 @@ Aside from the tutorial(s) needing some fleshing out, I believe a basic jquery-b
 
 As for the t-shirt - I wear a medium. Please send to 222 Broadway #1408 Oakland, CA 94607. If we win a date with you, we'll take you to one our favorite restaurants in Jack London Square. We live/work a block away, plenty of parking at our building, and good beer. 
 
+## More
+
+Andreas - I believe a purely browser-side javascript application would work as a great starting point for most people - especially beginner to intermediate developers. I see them:
+1) Installing Neo4j on a local machine (or using Heroku) and learning how to use the webadmin tool - working great with latest version (at least on Windows).
+2) Working with the basic javascript social graph to create nodes and relationships, add/delete properties, execute queries, and use the built in functions (shortest path, etc.)
+4)  Deconstructing the basic web app source code to develop their own applications, databases, etc. 
+
+I think this is pretty much how many people learned how to work with MySQL, javascript, jquery, etc. Once they get the basics under control, they start branching into other languages but tend to use the environments they started with.
