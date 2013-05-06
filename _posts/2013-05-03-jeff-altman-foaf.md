@@ -61,3 +61,12 @@ To see if I cleared the database, I queried with "START n=node(*) RETURN n;" and
 Overall, a very good experience. Let me know what questions you have.
 
 Jeff
+
+## Addendum
+
+Hi Andreas - Glad you liked the feedback. This version of Windows experience is actually pretty good compared to the last release. However, if the goal is to get less experienced developers to try it out, then simpler is better. A complete standalone application that installs the server, starts it, and launches the webadmin would certainly give the impression of ease-of-use.
+
+Aside from the tutorial(s) needing some fleshing out, I believe a basic jquery-based CRUD web app with source code would be great. To me that is the launch point for people building prototypes. Perhaps you've seen - http://scottbush.net/web-dev/using-jquery-and-ajax-to-input-nodes-into-a-neo4j-rest-server/ - almost there, but not quite enough.
+
+As for the t-shirt - I wear a medium. Please send to 222 Broadway #1408 Oakland, CA 94607. If we win a date with you, we'll take you to one our favorite restaurants in Jack London Square. We live/work a block away, plenty of parking at our building, and good beer. 
+
