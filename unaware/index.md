@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Unaware
-tagline: of any meaningful combination of the letters 'n', 'e', 'o', '4', 'j'
+tagline: 
 ---
 {% include JB/setup %}
 
